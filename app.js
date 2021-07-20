@@ -1,6 +1,7 @@
 const express = require ('express');
 const app = express();
 
+app.use(express.static('public'))
 
 // HOME ROUTE
 app.get('/home', (request, response, next) => {
